@@ -1,0 +1,2 @@
+echo "Start hooks before commit for v8unpack erf and epf"
+python.exe .git/hooks/pyv8unpack.py --g --index
