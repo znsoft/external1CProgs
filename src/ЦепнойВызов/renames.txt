@@ -1,0 +1,9 @@
+﻿2209e33a-4189-4185-92e8-b6616840448f.0\info-->und\2209e33a-4189-4185-92e8-b6616840448f.0\info
+2209e33a-4189-4185-92e8-b6616840448f.0\text-->ObjectModule.txt
+copyinfo-->und\copyinfo
+fb17889e-fc98-4d7b-ac0b-75ba72fc95c3-->und\fb17889e-fc98-4d7b-ac0b-75ba72fc95c3
+fb17889e-fc98-4d7b-ac0b-75ba72fc95c3.0-->Form\Форма
+fef116c6-0302-4aca-af65-07e373f699d2-->und\fef116c6-0302-4aca-af65-07e373f699d2
+root-->und\root
+version-->und\version
+versions-->und\versions
