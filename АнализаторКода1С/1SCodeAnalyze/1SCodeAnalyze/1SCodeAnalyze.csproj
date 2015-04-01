@@ -43,6 +43,8 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.Services" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -50,6 +52,7 @@
     <Compile Include="Алгоритмы\АнализаторКода1С.cs" />
     <Compile Include="Структуры\ИнформацияАнализа.cs" />
     <Compile Include="Структуры\СтруктураПараметров.cs" />
+    <Compile Include="Алгоритмы\ПроцедурыФункцииСЗапросами.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

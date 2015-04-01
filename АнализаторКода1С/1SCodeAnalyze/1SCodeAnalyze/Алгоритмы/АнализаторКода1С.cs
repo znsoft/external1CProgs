@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.IO;
 
 namespace _1SCodeAnalyze
@@ -121,10 +122,12 @@ namespace _1SCodeAnalyze
 
     class АнализаторКода1С
     {
-        List<String> files;
-        public АнализаторКода1С(List<String> files) {
+		String ИдентификаторЗапросов = "выполнить|найтипокоду|найтипореквизиту|найтипонаименованию";
+		//String "(Процедур|Функци)[ая][\s]*?" + ЭкранироватьРег(Value) + "([\S\s]*?)Конец\1[ыи]"
+			List<FileInfo> files;
+		public АнализаторКода1С(List<FileInfo> files) {
             this.files = files;
-           List НайтиЗапросы("аорпорп");
+          // List НайтиЗапросы("аорпорп");
         }
 
         private String СчитатьСодержимоеФайла(FileInfo file)
@@ -132,6 +135,27 @@ namespace _1SCodeAnalyze
             var Str = file.OpenText();
             return Str.ReadToEnd();
         }
+
+		public void ОбойтиВсеФайлы(){
+			foreach(FileInfo Файл in files){
+				Console.WriteLine(Файл.FullName);
+				НайтиВсеФункцииИПроцедуры(СчитатьСодержимоеФайла(Файл));
+			}
+
+		}
+
+		public void НайтиВсеФункцииИПроцедуры(String ИсходныйКод){
+			var ПоискФункций = new Regex(@"^(?!\/\/)[^\.\/]*?(procedur|functio|Процедур|Функци)[enая][\s]*?([А-Яа-яa-z0-9_]*?[\s]?\()([\S\s]*?)Конец\1[enыи]",RegexOptions.IgnoreCase|RegexOptions.Multiline);
+			MatchCollection Найдены = ПоискФункций.Matches(ИсходныйКод);
+			foreach(Match Функция in Найдены)
+				foreach (Capture capture in Функция.Captures)
+					{
+						Console.WriteLine("Index={0}, Value={1}", capture.Index, capture.Value);
+					}
+
+
+
+		}
 
 
     }
