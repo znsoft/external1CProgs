@@ -1,0 +1,5 @@
+E:\ВнешниеОбработки\external1CProgs\АнализаторКода1С\1SCodeAnalyze\1SCodeAnalyze\bin\Release\1SCodeAnalyze.exe
+E:\ВнешниеОбработки\external1CProgs\АнализаторКода1С\1SCodeAnalyze\1SCodeAnalyze\bin\Release\1SCodeAnalyze.pdb
+E:\ВнешниеОбработки\external1CProgs\АнализаторКода1С\1SCodeAnalyze\1SCodeAnalyze\obj\Release\ResolveAssemblyReference.cache
+E:\ВнешниеОбработки\external1CProgs\АнализаторКода1С\1SCodeAnalyze\1SCodeAnalyze\obj\Release\1SCodeAnalyze.exe
+E:\ВнешниеОбработки\external1CProgs\АнализаторКода1С\1SCodeAnalyze\1SCodeAnalyze\obj\Release\1SCodeAnalyze.pdb
