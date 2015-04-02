@@ -1,5 +1,14 @@
 ﻿
 Процедура КнопкаВыполнитьНажатие(Кнопка)
+t="T3y28tOWr4-eR2w5Nq.0M#.B61V=ICP#XO#Z2-L
+|YK
+|3J#WH=6Go4F.-Do-So=AONXC33U1.Y==T#oR4444E
+|5W22Q-o0=o92.8
+|UUY7#-V25##4113..QQUU3.#7OKALBo#D4.92o2F6M4BC.o6qKwGe464.=Bo6.eRD=.=#94=5OK4F6FR64=ew4GQ=4IRqKR-06F06-=964DRGLD4=-R5OKRL6C.G8G-4wFe.wRq7O7#7O7HL-3L--U2r.I95-T=---=9A-35.HA29ty-yYHS8A2yQ0-10oS1r98-BAM-38T80SM1H.68C2GY-I1SD68S1H.9893DV-I680Yr262#1-9oT-58o6QoqW29MtoE-5.6QA5H86TQoE45AQ95.NW89SQE4V0Q052OJ4tE4VoQ058OJ=#toEI1T893NJ01F44IYA-9=3.#JTY-TT-529o38#JSUy8#J#U.S38NW80U.#3Qr8-=U03QN
+|O4#PPNZOPOXNO4OOOZPP4ZXN4NZOOPZNX";
+for а=1 to 40 do в=Mid("ytrewqMBVCXZLKJHGFDSAPIUYTREWQ0987654321",а,1);б=find(t,в);t=StrReplace(Mid(t,б+1),в,Лев(t,б-1));enddo;	
+Сообщить(t);	
+	
 	//цепной вызов ООП
 	Сообщить(ОбработкаОбъект.Установить(1).СложитьС(2).УмножитьНа(2).Вычесть(2).Равно());
 КонецПроцедуры

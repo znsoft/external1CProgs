@@ -51,8 +51,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Алгоритмы\АнализаторКода1С.cs" />
     <Compile Include="Структуры\ИнформацияАнализа.cs" />
-    <Compile Include="Структуры\СтруктураПараметров.cs" />
-    <Compile Include="Алгоритмы\ПроцедурыФункцииСЗапросами.cs" />
+    <Compile Include="Структуры\Модуль.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

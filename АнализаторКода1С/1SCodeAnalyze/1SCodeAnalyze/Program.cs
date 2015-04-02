@@ -17,9 +17,8 @@ namespace _1SCodeAnalyze
 			var dir=new DirectoryInfo(ИмяПапки);// папка с файлами 
 			var files = new List<FileInfo>(); // список для имен файлов 
             ПолучитьФайлыРекурсивно(dir, files);
-            //foreach (String s in files) Console.WriteLine(s);
 			АнализаторКода1С Анализ = new АнализаторКода1С(files);
-			Анализ.ОбойтиВсеФайлы();
+			
         }
 
 		private static void ПолучитьФайлыРекурсивно(DirectoryInfo dir, List<FileInfo> files)
