@@ -10,5 +10,11 @@ namespace _1SCodeAnalyze
         public String ОписаниеПроблемы;
         public String ПроблемныйКод;
         public int Смещение;
+
+		public ИнформацияАнализа(int index, String Описание, String Проблема){
+			Смещение = index;
+			ОписаниеПроблемы = Описание;
+			ПроблемныйКод = Проблема;
+		}
     }
 }

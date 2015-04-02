@@ -24,6 +24,12 @@ namespace _1SCodeAnalyze.Структуры
           //  Методы = new Dictionary<String, Boolean>();
         }
 
+		public Модуль ДобавитьПроблему(String Проблема, int Index){
+			ТаблицаАнализа.Add(new ИнформацияАнализа(Index, Проблема, Проблема));
+			ЕстьОшибки = true;
+			return this;
+		}
+
         private String СчитатьСодержимоеФайла(FileInfo file)
         {
             var Str = file.OpenText();
