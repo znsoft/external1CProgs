@@ -52,6 +52,7 @@
     <Compile Include="Алгоритмы\АнализаторКода1С.cs" />
     <Compile Include="Структуры\ИнформацияАнализа.cs" />
     <Compile Include="Структуры\Модуль.cs" />
+    <Compile Include="Структуры\ТелоКода.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tests\" />
