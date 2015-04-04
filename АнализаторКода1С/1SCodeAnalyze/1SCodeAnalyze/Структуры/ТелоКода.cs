@@ -6,6 +6,10 @@ using System.Text.RegularExpressions;
 
 namespace _1SCodeAnalyze.Структуры
 {
+
+	/// <summary>
+	/// Тело кода. класс куда попадает и анализируется тело процедуры или цикла
+	/// </summary>
     class ТелоКода
     {
         String Текст;
@@ -53,5 +57,7 @@ namespace _1SCodeAnalyze.Структуры
             ПровестиАнализ();
             return ЗапросЕсть;
         }
+
+
     }
 }

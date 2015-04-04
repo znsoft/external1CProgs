@@ -5,6 +5,9 @@ using System.Text;
 
 namespace _1SCodeAnalyze
 {
+	/// <summary>
+	/// Информация анализа. хранение информации об анализе кода модуля
+	/// </summary>
     class ИнформацияАнализа
     {
         public String ОписаниеПроблемы;
@@ -17,4 +20,37 @@ namespace _1SCodeAnalyze
 			ПроблемныйКод = Проблема;
 		}
     }
+	/// <summary>
+	/// Свойства методов. класс хранящий свойства функций и процедур модуля
+	/// </summary>
+	class СвойстваМетодов{
+		public Boolean Экспортный;
+		public Boolean ЕстьЗапрос;
+		public List<String> СтекВызовов;
+		public int Index;
+
+		public СвойстваМетодов(){
+			СтекВызовов = new List<string>();
+		}
+
+		public СвойстваМетодов(Boolean q, Boolean e ){
+			ЕстьЗапрос = q;
+			Экспортный = e;
+			СтекВызовов = new List<string>();
+		}
+
+		public void ДобавитьВызов (string value)
+		{
+			СтекВызовов.Add(value);
+		}
+
+
+		public string ПолучитьСтекСтрокой ()
+		{
+			String s = "";
+			foreach(String m in СтекВызовов)s = m + "()->"+s;
+			if(String.IsNullOrEmpty(s)&&ЕстьЗапрос)s = "Запрос()";
+			return s;
+		}
+	}
 }
