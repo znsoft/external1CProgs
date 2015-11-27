@@ -48,6 +48,7 @@
 КонецФункции
 
 Функция Qrcode(source,Скрипт = Неопределено,typeNumber = 0,errorCorrectLevel = "M" ) экспорт
+	
 	Если Скрипт = Неопределено Тогда
 		Скрипт = Новый COMОбъект("MSScriptControl.ScriptControl");
 	КонецЕсли;
@@ -1795,7 +1796,10 @@
 	
 	//SHA                                        SHA1CryptoServiceProvider 
 
-//SHA1                                       SHA1CryptoServiceProvider 
+	
+	
+	
+	//SHA1                                       SHA1CryptoServiceProvider 
 
 //System.Security.Cryptography.SHA1          SHA1CryptoServiceProvider 
 
