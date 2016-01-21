@@ -1794,8 +1794,7 @@
 //----------------------------------2---------------------
 Функция sha512(Т)
 	
-//SHA                                        SHA1CryptoServiceProvider 
-
+	//SHA                                        SHA1CryptoServiceProvider 
 
 	
 	
