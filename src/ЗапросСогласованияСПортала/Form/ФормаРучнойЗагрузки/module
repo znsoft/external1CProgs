@@ -1,0 +1,32 @@
+﻿
+Процедура КнопкаВыполнитьНажатие(Кнопка)
+			ЭтаФорма.Закрыть(Путь);
+КонецПроцедуры
+
+Процедура СсылкаСкачиванияНажатие(Элемент)
+		Обозреватель = Обработки.Обозреватель.Создать();
+		Форма = Обозреватель.ПолучитьФорму();
+		Форма.Заголовок = "Подождите ...";
+		Форма.СтартоваяСтраница = "http://msmr/docs/it/services/default.aspx";
+		//Форма.СтартоваяСтраница = "http://msmr/docs/it/services/_layouts/bcs/ExportToExcel.aspx?entitynamespace=SollersDV.ITIL.SharePoint.Bcs&entityname=ProvisionedService&findermethodname=GetServiceListForExport&worksheetname=ITServices&filename=Services";
+		Форма.Открыть();
+КонецПроцедуры
+
+Процедура ПутьНачалоВыбора(Элемент, СтандартнаяОбработка)
+
+		Длг = Новый ДиалогВыбораФайла(РежимДиалогаВыбораФайла.Открытие);
+		
+		Длг.Заголовок = "Выберите файл эксель со списком владельцев ресурсов";
+		Длг.Фильтр = "Файлы  (*.xlsx)|*.xls|Все файлы (*.*)|*.*";
+		Длг.Расширение = "xlsx";
+		
+		Если Длг.Выбрать() Тогда
+			Путь = Длг.ПолноеИмяФайла;
+		КонецЕсли;
+
+КонецПроцедуры
+
+Процедура ПриОткрытии()
+	ЭлементыФормы.ПолеHTMLДокумента1.УстановитьТекст("Подождите файл загружается...");
+	ЭлементыФормы.ПолеHTMLДокумента1.Перейти( "http://msmr/docs/it/services/_layouts/bcs/ExportToExcel.aspx?entitynamespace=SollersDV.ITIL.SharePoint.Bcs&entityname=ProvisionedService&findermethodname=GetServiceListForExport&worksheetname=ITServices&filename=Services");
+КонецПроцедуры

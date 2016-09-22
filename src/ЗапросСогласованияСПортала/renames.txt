@@ -1,0 +1,13 @@
+﻿155f9029-a03c-4dcd-8c1c-f3e270052efe-->und\155f9029-a03c-4dcd-8c1c-f3e270052efe
+155f9029-a03c-4dcd-8c1c-f3e270052efe.0-->Form\РабочийСтол
+73c78721-42a6-417a-a008-9ee9082419c7-->und\73c78721-42a6-417a-a008-9ee9082419c7
+73c78721-42a6-417a-a008-9ee9082419c7.0-->Form\ФормаРучнойЗагрузки
+9394d176-01e8-471a-8dae-6c8369574ab6-->und\9394d176-01e8-471a-8dae-6c8369574ab6
+9394d176-01e8-471a-8dae-6c8369574ab6.0-->Form\ФормаАвторизации
+copyinfo-->und\copyinfo
+e2cb4e73-759d-463c-bf72-2815a0ea2b6c-->und\e2cb4e73-759d-463c-bf72-2815a0ea2b6c
+f9e86878-2cf3-4daa-a314-6c8d01d9ca75.0\info-->und\f9e86878-2cf3-4daa-a314-6c8d01d9ca75.0\info
+f9e86878-2cf3-4daa-a314-6c8d01d9ca75.0\text-->ObjectModule.txt
+root-->und\root
+version-->und\version
+versions-->und\versions
