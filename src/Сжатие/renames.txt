@@ -1,9 +1,0 @@
-﻿54a98653-aa8e-477c-9b5e-555b9fb17a8a.0\info-->und\54a98653-aa8e-477c-9b5e-555b9fb17a8a.0\info
-54a98653-aa8e-477c-9b5e-555b9fb17a8a.0\text-->ObjectModule.txt
-b3273876-a8f3-4b7f-9b7e-d9b4839f7d5d-->und\b3273876-a8f3-4b7f-9b7e-d9b4839f7d5d
-b3273876-a8f3-4b7f-9b7e-d9b4839f7d5d.0-->Form\Форма
-cd8591b5-1e48-4806-92ed-ce76b50a825e-->und\cd8591b5-1e48-4806-92ed-ce76b50a825e
-copyinfo-->und\copyinfo
-root-->und\root
-version-->und\version
-versions-->und\versions
